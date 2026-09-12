@@ -1,5 +1,6 @@
 # Foreglow Theme for [Zed Editor](https://zed.dev/)
-<img width="1537" height="1191" alt="foreglow-pack" src="https://github.com/user-attachments/assets/76249ab2-94c0-4477-ac7b-d485aa279abe" />
+
+<p align="center"><img width="640" alt="foreglow-pack" src="https://github.com/user-attachments/assets/76249ab2-94c0-4477-ac7b-d485aa279abe" /></p>
 
 ## Previews
 
