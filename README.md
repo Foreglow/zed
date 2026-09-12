@@ -1,7 +1,30 @@
-# Foreglow Theme for Zed Editor
+# Foreglow Theme for [Zed Editor](https://zed.dev/)
+<img width="1537" height="1191" alt="foreglow-pack" src="https://github.com/user-attachments/assets/76249ab2-94c0-4477-ac7b-d485aa279abe" />
+
+## Previews
+
+<details>
+  <summary>🌃 Foreglow</summary>
+  <img width="1460" height="1061" alt="foreglow" src="https://github.com/user-attachments/assets/0f451e59-a1a5-4d73-859a-56522a866e6d" />
+</details>
+
+<details>
+  <summary>🌇 Afterglow</summary>
+  <img width="1460" height="1061" alt="afterglow" src="https://github.com/user-attachments/assets/14ff88c6-5822-4beb-872a-7a6ebf07dd80" />
+</details>
+
+<details>
+  <summary>🌉 Alpenglow</summary>
+  <img width="1460" height="1061" alt="alpenglow" src="https://github.com/user-attachments/assets/67087c1c-df1a-4899-bf1b-185612a9e2ca" />
+</details>
+
+<details>
+  <summary>🌌 Airglow</summary>
+  <img width="1460" height="1061" alt="airglow" src="https://github.com/user-attachments/assets/142f498e-a0d9-461c-a693-c336dced38d7" />
+</details>
 
 A twilight-inspired theme family for the Zed editor, with four variants:
-**Foreglow** (dark, dawn), **Afterglow** (light, dusk), **Alpenglow**
+**Foreglow** (dark-dawn), **Afterglow** (light-dusk), **Alpenglow**
 (rubescent), and **Airglow** (auroral).
 
 ## Repository Layout
@@ -147,10 +170,6 @@ guide).
 | Type | `#4AA8D0` | Classes, types |
 | Variable | `#8BC4D4` | Variables |
 | Accent | `#2EE8C8` | Cursor, accent |
-
-## Screenshot
-
-Coming soon.
 
 ## License
 
