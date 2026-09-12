@@ -1,21 +1,82 @@
 # Foreglow Theme for Zed Editor
 
-A twilight-inspired dark theme for the Zed editor.
+A twilight-inspired theme family for the Zed editor, with four variants:
+**Foreglow** (dark, dawn), **Afterglow** (light, dusk), **Alpenglow**
+(rubescent), and **Airglow** (auroral).
 
-## Installation
+## Repository Layout
 
-### From Zed Settings
+```
+.
+├── extension.toml       # extension manifest (id, name, version, ...)
+└── themes/
+    └── foreglow.json     # theme family: all 4 variants in one file
+```
 
-1. Open Zed → Settings → Editor → Theme
-2. Search for **Foreglow**
-3. Select it to apply
+This follows [Zed's extension format](https://zed.dev/docs/extensions/developing-extensions):
+every extension needs an `extension.toml` manifest, and theme JSON files live
+under `themes/`, each conforming to Zed's
+[theme schema](https://zed.dev/schema/themes/v0.2.0.json) (a theme *family*
+object containing one or more `themes` entries with `name`, `appearance`,
+and a `style` map — not a flat list of color tokens).
 
-### Manual Install
+## Try it locally (dev extension)
 
-1. Open Zed
-2. Press `Cmd+,` / `Ctrl+,` to open settings
-3. Go to Editor → Theme
-4. Click "Install Theme" and paste the theme JSON
+Zed doesn't have an in-app "paste theme JSON" flow — you install the whole
+extension folder as a dev extension instead:
+
+1. Clone this repo: `git clone https://github.com/Foreglow/zed.git`
+2. In Zed, open the command palette (`Cmd+Shift+P` / `Ctrl+Shift+P`) and run
+   **zed: install dev extension**
+3. Select the cloned `zed` folder (the one containing `extension.toml`)
+4. Open theme selection (`Cmd+K Cmd+T` / `Ctrl+K Ctrl+T`) and pick **Foreglow**,
+   **Afterglow**, **Alpenglow**, or **Airglow**
+
+If you already have the published extension installed, installing the dev
+version will replace it. Check `~/.local/share/zed/logs/Zed.log` (or run
+`zed --foreground` for verbose output) if something doesn't load.
+
+## Publishing
+
+Zed themes are distributed through the community
+[zed-industries/extensions](https://github.com/zed-industries/extensions)
+registry — there's no separate marketplace to upload to directly. To publish:
+
+1. Read Zed's [publishing guidelines](https://zed.dev/docs/extensions/publishing/overview)
+   (prerequisites and license requirements).
+2. Fork [zed-industries/extensions](https://github.com/zed-industries/extensions)
+   and clone it:
+   ```bash
+   git clone https://github.com/<your-username>/extensions
+   cd extensions
+   git submodule init
+   git submodule update
+   ```
+3. Add this repo as a submodule (HTTPS, not SSH, and it must be publicly
+   accessible):
+   ```bash
+   git submodule add https://github.com/Foreglow/zed.git extensions/foreglow
+   git add extensions/foreglow
+   ```
+4. Add an entry to their `extensions.toml`:
+   ```toml
+   [foreglow]
+   submodule = "extensions/foreglow"
+   version = "0.1.0"
+   ```
+5. Run `pnpm sort-extensions`, commit, and open a PR against
+   `zed-industries/extensions`.
+
+Maintainers review every submission — respond to feedback within 3 weeks or
+the PR gets closed. Once merged, Zed packages and publishes it automatically;
+after that it's installable from Zed's built-in Extensions panel like any
+other theme, no dev-extension step needed.
+
+To ship an update later: bump `version` in `extension.toml` here, push, then
+update the submodule commit and `version` in `extensions.toml` in a new PR
+against `zed-industries/extensions` (see their
+[updating an extension](https://zed.dev/docs/extensions/publishing/updating-and-maintenance)
+guide).
 
 ## Color Palette
 
