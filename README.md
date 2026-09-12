@@ -1,4 +1,13 @@
-# Foreglow Theme for [Zed Editor](https://zed.dev/)
+<p align="center"><img width="320" alt="foreglow-logo" src="https://github.com/user-attachments/assets/a54992d1-a0c2-4ac0-8bfc-f54da8f3e4a1" /></p>
+
+<h3 align="center">Foreglow Theme for <a href="https://zed.dev/">Zed Editor</a></h3>
+
+<p align="center">
+  <a href="https://github.com/Foreglow/zed/stargazers"><img src="https://img.shields.io/github/stars/Foreglow/zed?style=for-the-badge&labelColor=313244&color=CB81E4" alt="Stars" /></a>
+  <a href="https://github.com/Foreglow/zed/issues"><img src="https://img.shields.io/github/issues/Foreglow/zed?style=for-the-badge&labelColor=313244&color=8930A6" alt="Issues" /></a>
+  <a href="https://github.com/Foreglow/zed/graphs/contributors"><img src="https://img.shields.io/github/contributors/Foreglow/zed?style=for-the-badge&labelColor=313244&color=FF6B8A" alt="Contributors" /></a>
+  <a href="https://github.com/Foreglow/zed/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Foreglow/zed?style=for-the-badge&labelColor=313244&color=2EE8C8" alt="License" /></a>
+</p>
 
 <p align="center"><img width="640" alt="foreglow-pack" src="https://github.com/user-attachments/assets/76249ab2-94c0-4477-ac7b-d485aa279abe" /></p>
 
