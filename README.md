@@ -55,13 +55,13 @@ registry — there's no separate marketplace to upload to directly. To publish:
 3. Add this repo as a submodule (HTTPS, not SSH, and it must be publicly
    accessible):
    ```bash
-   git submodule add https://github.com/Foreglow/zed.git extensions/foreglow
-   git add extensions/foreglow
+   git submodule add https://github.com/Foreglow/zed.git extensions/foreglow-theme
+   git add extensions/foreglow-theme
    ```
 4. Add an entry to their `extensions.toml`:
    ```toml
-   [foreglow]
-   submodule = "extensions/foreglow"
+   [foreglow-theme]
+   submodule = "extensions/foreglow-theme"
    version = "0.1.0"
    ```
 5. Run `pnpm sort-extensions`, commit, and open a PR against
